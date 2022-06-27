@@ -1,10 +1,12 @@
 # function to geneate a platetools plot with concentration of libraries
 
 library(ggplot2)
-library(platetools)
 library(viridis)
+library(platetools)
 
-quant_data = read.csv()
+# CHANGE ME: point df toward the csv that contains the experiment's quantificaiton data
+
+df = read.csv("")
 
 platetools_quant_plot <- function(df){
   
@@ -19,4 +21,4 @@ platetools_quant_plot <- function(df){
   a
 }
 
-platetools_quant_plot(quant_data)
+platetools_quant_plot(df)
